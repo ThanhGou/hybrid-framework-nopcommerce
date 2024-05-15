@@ -7,7 +7,7 @@ This repository contains test automation scripts for the [nopCommerce demo websi
 - [Project Structure](#project-structure)
 - [Tech Stack](#tech-stack)
 - [Setup and Installation](#setup-and-installation)
-- [Running Tests](#running-tests)
+- [Run Test](#run-test)
 - [Reporting](#reporting)
 - [Test example](#test-example)
 

@@ -1,0 +1,32 @@
+<component name="libraryTable">
+  <library name="bcpkix-jdk18on-1.76">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/bcpkix-jdk18on-1.76.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/bcprov-jdk18on-1.76.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/bcutil-jdk18on-1.76.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/commons-compress-1.24.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/commons-io-2.13.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/commons-lang3-3.13.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/dec-0.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/docker-java-3.3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/docker-java-api-3.3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/docker-java-core-3.3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/docker-java-transport-3.3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/docker-java-transport-httpclient5-3.3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/gson-2.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/guava-19.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/httpclient5-5.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/httpcore5-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/httpcore5-h2-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/jackson-annotations-2.10.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/jackson-core-2.10.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/jackson-databind-2.10.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/jcl-over-slf4j-1.7.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/jna-5.13.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/slf4j-api-2.0.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libWebDriverManager/webdrivermanager-5.6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

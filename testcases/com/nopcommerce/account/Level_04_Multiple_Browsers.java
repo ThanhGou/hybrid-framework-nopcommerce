@@ -28,14 +28,11 @@ public class Level_04_Multiple_Browsers extends BaseTest {
     @BeforeClass
     public void beforeClass(String browserName){
         driver = getBrowserDriver(browserName);
-
-        //mo 1 URL hoac tu page nay chuyen qua page khac -> can khoi tao page do len
         homePage = new HomePageObject(driver);
     }
     @Test
     public void User_01_Register_Empty_Data(){
         homePage.clickToRegisterLink();
-        //tu homepage click Register link se vao Register page -> khoi tao object cho register page
         registerPage = new RegisterPageObject(driver);
         registerPage.clickToRegisterButton();
         Assert.assertEquals(registerPage.getFirtNameErrorMessageText(),"First name is required.");
@@ -45,7 +42,6 @@ public class Level_04_Multiple_Browsers extends BaseTest {
     }
     @Test
     public void User_02_Register_Invalid_Email(){
-        //dang o register page sau TC 01, click vao logo -> vao lai homepage
         registerPage.clickToNopCommerceLogo();
         homePage = new HomePageObject(driver);
         homePage.clickToRegisterLink();

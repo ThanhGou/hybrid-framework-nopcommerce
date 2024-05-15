@@ -1,7 +1,4 @@
 package com.nopcommerce.account;
-
-import commons.BasePage;
-import org.bouncycastle.jcajce.provider.drbg.DRBG;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -31,13 +28,11 @@ public class Level_03_BasePage_01_PageObject{
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get("https://demo.nopcommerce.com/");
-        //mo 1 URL hoac tu page nay chuyen qua page khac -> can khoi tao page do len
         homePage = new HomePageObject(driver);
     }
     @Test
     public void User_01_Register_Empty_Data(){
         homePage.clickToRegisterLink();
-        //tu homepage click Register link se vao Register page -> khoi tao object cho register page
         registerPage = new RegisterPageObject(driver);
         registerPage.clickToRegisterButton();
         Assert.assertEquals(registerPage.getFirtNameErrorMessageText(),"First name is required.");
@@ -47,7 +42,6 @@ public class Level_03_BasePage_01_PageObject{
     }
     @Test
     public void User_02_Register_Invalid_Email(){
-        //dang o register page sau TC 01, click vao logo -> vao lai homepage
         registerPage.clickToNopCommerceLogo();
         homePage = new HomePageObject(driver);
         homePage.clickToRegisterLink();

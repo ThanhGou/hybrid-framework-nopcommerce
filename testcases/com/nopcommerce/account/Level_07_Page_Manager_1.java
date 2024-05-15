@@ -24,13 +24,10 @@ public class Level_07_Page_Manager_1 extends BaseTest {
     @BeforeClass
     public void beforeClass(String browserName){
         driver = getBrowserDriver(browserName);
-
-        //mo 1 URL hoac tu page nay chuyen qua page khac -> can khoi tao page do len
         homePage = PageGeneratorManager.getHomePage(driver);
     }
     @Test
     public void User_01_Register_Empty_Data(){
-        //tu homepage click Register link se vao Register page -> khoi tao object cho register page
         registerPage = homePage.clickToRegisterLink();
         registerPage.clickToRegisterButton();
         Assert.assertEquals(registerPage.getFirtNameErrorMessageText(),"First name is required.");

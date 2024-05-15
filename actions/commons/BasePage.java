@@ -1,34 +1,22 @@
 package commons;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.Test;
-
 import java.time.Duration;
 import java.util.List;
 import java.util.Set;
 
 public class BasePage {
-
-    //xac dinh dung method de lam gi -> dung ham nao cua selenium -> kieu du lieu tra ve cua ham do
-    //e.g. ham click la ham void (cac ham thuc hien action hau het la void)
-    //ham void ko can return
-
-    //cac ham de lay ra du lieu: String/ int/ WebELement/ List<WebElement>
-    //ham !=void bat buoc can return de ket thuc ham
-    //kieu du lieu cua return bat buoc phai giong kieu du lieu cua ham
     public void openPageURL(WebDriver driver, String pageUrl){
         driver.get(pageUrl);
     }
     public String getPageTitle(WebDriver driver){
         return driver.getTitle();
     }
-
     public void getCurrentPageURL(WebDriver driver){
         driver.getCurrentUrl();
     }
@@ -83,8 +71,6 @@ public class BasePage {
     public void deleteAllCookies(WebDriver driver){
         driver.manage().deleteAllCookies();
     }
-
-    //INTERACT WITH WEB ELEMENTS
     public By getByXpath(String locator){
         return By.xpath(locator);
     }
@@ -290,5 +276,4 @@ public class BasePage {
     public void waitForElementClickable(WebDriver driver, String locator){
         new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.elementToBeClickable(getWebElement(driver, locator)));
     }
-
 }

@@ -18,9 +18,6 @@ public class Level_02_BasePage_02_Init {
     private BasePage basePage;
     @BeforeClass
     public void beforeClass(){
-        //webdriver.gecko.driver is a system property used in Selenium WebDriver
-        // to specify the path to the GeckoDriver executable
-        //allows Selenium WebDriver to know where to find the GeckoDriver executable
         System.setProperty("webdriver.gecko.driver",projectPath + "/browserDrivers/geckodriver");
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);

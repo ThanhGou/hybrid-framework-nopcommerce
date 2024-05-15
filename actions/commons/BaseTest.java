@@ -30,7 +30,6 @@ public class BaseTest {
         }
         driver.manage().window().setPosition(new Point(0,0));
         driver.manage().window().setSize(new Dimension(1920, 1082));
-//        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.get("https://demo.nopcommerce.com/");
         return driver;
